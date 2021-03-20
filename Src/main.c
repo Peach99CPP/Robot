@@ -124,9 +124,8 @@ int main(void)
   MX_TIM8_Init();
   MX_TIM4_Init();
   /* USER CODE BEGIN 2 */
-    RetargetInit(&huart4);
+    RetargetInit(&huart2);
     step = 0;
-    PWM_Enable();
     PID_Init(); //
     HAL_TIM_Base_Start_IT(&htim6);
     printf("ball ball you \n");
@@ -134,7 +133,7 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-    while (1) {
+    while (1)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
