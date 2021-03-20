@@ -128,12 +128,12 @@ int main(void)
     step = 0;
     PID_Init(); //
     HAL_TIM_Base_Start_IT(&htim6);
-    printf("ball ball you \n");
+    printf("ball ball you  1\n");
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-    while (1)
+    while (1){
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
