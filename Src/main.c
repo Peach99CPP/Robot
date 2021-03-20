@@ -129,6 +129,7 @@ int main(void)
     PWM_Enable();
     PID_Init(); //
     HAL_TIM_Base_Start_IT(&htim6);
+    printf("ball ball you \n");
   /* USER CODE END 2 */
 
   /* Infinite loop */

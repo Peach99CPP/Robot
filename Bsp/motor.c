@@ -5,7 +5,7 @@
 #include "PID_struct.h"
 #include "main.h"
 
-extern TIM_HandleTypeDef htim1, htim8;
+extern TIM_HandleTypeDef htim1, htim8,htim2,htim3,htim4,htim5;
 
 void PWM_Enable(void) {
     //enable the channels of pwm (定时器1和定时器8）
@@ -17,6 +17,7 @@ void PWM_Enable(void) {
     HAL_TIM_PWM_Start(&htim8, TIM_CHANNEL_2);
     HAL_TIM_PWM_Start(&htim8, TIM_CHANNEL_3);
     HAL_TIM_PWM_Start(&htim8, TIM_CHANNEL_4);
+    HAL_TIM_Encoder_Start(&htim2,HAL_TIM_ACTIVE_CHANNEL_1);
 }
 
 short read_num(int flag) {
